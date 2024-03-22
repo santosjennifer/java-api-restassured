@@ -147,7 +147,7 @@ public class SpotifyAPITest extends BaseAPI {
 				.get("/albums/6KImCVD70vtIoJWnq6nGn3")
 			.then()
 				.statusCode(404)
-				.body("error.message", equalTo("non existing id"));
+				.body("error.message", equalTo("Non existing id: 'spotify:album:6KImCVD70vtIoJWnq6nGn3'"));
 	}
 
 }
